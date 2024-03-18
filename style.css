@@ -1,0 +1,133 @@
+/* CSS */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+
+}
+.navbar a{
+    font-size: 1.15rem;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 2.5rem;
+}
+
+
+.menu-icon {
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .menu-icon .bar {
+    width: 100%;
+    height: 4px;
+    right: 7%;
+    background-color: black;
+    border-radius: 4px;
+    display: none;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+  .main {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(80, 51, 88);
+  }
+  
+  .container {
+      width: 35rem;
+      box-shadow: 0px 0px 5px grey;
+      display: flex;
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      flex-direction: column;
+  }
+  
+  .col {
+      text-align: justify;
+      padding: 15px;
+      width: 95%;
+  }
+  
+  #submit {
+      width: 100%;
+      background-color: rgb(255, 195, 13);
+      transition: 0.5s;
+      color: white;
+      outline: none;
+      border: none;
+      font-size: 25px;
+      display: block;
+      padding: 10px;
+      cursor: pointer;
+  }
+  
+  #submit:hover {
+      background-color: rgb(34, 6, 53);
+  }
+  
+  .box {
+      box-shadow: 0px -1px 1px grey;
+      width: 100%;
+  }
+@media (max-width:992px) {
+    .header{
+        padding: 1.5rem 5%;
+    }
+  
+    
+}
+
+
+
+@media (max-width:612px){
+    .menu-icon .bar{
+        display: inline-flex;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0; /* Changed from 18rem */
+        overflow: hidden; /* Added to hide the navbar items */
+        background-color: snow;
+        backdrop-filter: blur(10px);
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 2rem 0;
+        text-align: center;
+    }
+    
+}
+
